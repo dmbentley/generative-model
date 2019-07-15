@@ -44,10 +44,26 @@ The analysis of this notebook only uses one feature. In the subsequent notebook,
 
 ## 2-univariate-generative-model.ipynb
 
+In this notebook, multiple features are used to determine which winery an unknown wine bottle originates from. Shown below is a bivariate plot of the features alcohol and ash. 
+
 ![](./images/ash-vs-alcohol.png)
+
+The aim of a multivariate generative model is to fit multivariate Gaussian distributions that depict the characteristics of each of the wineries. For a bivariate generative model that uses the two features alcohol content and ash content, this means creating three bivariate normal distributions for each of the three wineries. This is shown in the three plots below.
 
 ![](./images/winery-1.png)
 
 ![](./images/winery-2.png)
 
 ![](./images/winery-3.png)
+
+When a bivariate generative model is constructed that uses these two features, an accuracy of 78% is achieved. This is better than the accuracy of 69% using alcohol content alone and the accuracy of 49% using ash content alone. The combination of the two features improves the model.
+
+When all 13 features are used, an impresive 98% accuracy is achieved in the model.
+
+## References
+
+* Dasgupta, S. (2019). EDX Course: Machine Learning Fundamentals. UCSanDiegoX. Retrieved from [https://www.edx.org/course/machine-learning-fundamentals-3]
+
+* Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+
+
